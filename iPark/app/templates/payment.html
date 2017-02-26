@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Payment</title>
+  <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width", user-scalable="no", content="initial-scale=0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/rent.css">
+</head>
+<body>
+  <!-- Start Nav Bar -->
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/map">Map</a></li>
+        <li><a href="/profile"><b>Profile</b></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Nav Bar -->
+
+  <div class="container">
+    <h1 class="text-center">Payment Information</h1>
+  </div> 
+  <div class="container">
+  <form class="form-horizontal">
+    <div class="form-group form-inline">
+      <label for="acceptCC" class="col-sm-2 control-label">Credit Cards Accepted</label>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Visa
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Master Card
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> American Express
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Discover
+          </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputCardNumb" class="col-sm-2 control-label">Card Number</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Card Number">
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputExpDate" class="col-sm-2 control-label">Expiry Date</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Expiry Date">
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputCVV" class="col-sm-2 control-label">CVV</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="CVV">
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputName" class="col-sm-2 control-label">Name on Card</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Name">
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputCountry" class="col-sm-2 control-label">Country</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Country">
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputAdd1" class="col-sm-2 control-label">Address 1</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Address 1">
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputAdd2" class="col-sm-2 control-label">Address 2</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Address 2">
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputCity" class="col-sm-2 control-label">City</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="City">
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputState" class="col-sm-2 control-label">State</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="State">
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputPostCode" class="col-sm-2 control-label">Postal Code</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Postal Code">
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputPhone#" class="col-sm-2 control-label">Contact Phone Number</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Phone Number">
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword3" placeholder="Email">
+        </div>
+    </div>
+    
+    <!-- Submit Button -->
+    <div class="form-group" align="center">
+      <div class="col-sm-offset-2 col-sm-10"> 
+        <button class="btn btn-default"><a href="/thankyou?address={{address}}&user_id={{user_id}}">Submit</a></button>
+      </div>
+    </div>
+    <!-- End of Button -->
+  </form>
+  </div>
+  </body>
+</html> 

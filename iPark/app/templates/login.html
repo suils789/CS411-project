@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Log In Page</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width", user-scalable="no", content="initial-scale=0">
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+    <!-- Start Nav Bar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href="./"><b>Home</b></a></li>
+          <li><a href="map.html"><b>Map</b></a></li>
+          <li><a href="profile"><b>Profile</b></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Nav Bar -->
+
+    <!-- Sign In Panel -->
+    <div class="row panel_padding">
+      <div class="col-sm-offset-4 col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading text-center"><h2><b>Login</b></h2>
+          </div>
+          <div class="panel-body">
+            <form method="post" action="/login">
+              <label>Username:</label><input type="text" name="username"/><br>
+              <label>Password:</label><input type="password" name="password"/><br>
+              <input type="submit" value="Sign in"/><br/>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Sign In Panel -->
+
+  </body>
+</html> 

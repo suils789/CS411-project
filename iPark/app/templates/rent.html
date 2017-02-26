@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", user-scalable="no", content="initial-scale=0">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/login.css" type="text/css" media="all"/>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>iPark Main Page</title>
+  </head>
+<body>
+	<!-- Navbar -->
+ 	<div class="navbar navbar-inverse navbar-static-top navbar-fixed-top">
+    	<div class="container">
+      		<ul class="nav navbar-nav">
+        		<li><a href="./"><b>Home</b></a></li>
+        		<li><a href="map"><b>Map</b></a></li>
+        		<li><a href="profile"><b>Profile</b></a></li>
+      		</ul>
+    	</div>
+ 	</div>
+	<!-- End Navbar -->
+
+    <div class="row panel_padding">
+      <div class="col-sm-offset-4 col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading text-center"><h2><b>Rent</b></h2>
+          </div>
+            <div class="panel-body">
+              <div class="container">
+          
+              <h2>Owner Information</h2>
+              <p> User Name: {{username}}<br>
+              Address: {{address}}
+              </p> 
+
+              <p><a href="/payment?address={{address}}&user_id={{user_id}}"</a><button>Rent!</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body> 
+</html> 

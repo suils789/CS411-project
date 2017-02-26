@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>User Profile</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width", user-scalable="no", content="initial-scale=0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href="/"><b>Home</b></a></li>
+          <li><a href="/map"><b>Map</b></a></li>
+          <li class="active"><a href="profile"><b>Profile</b></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="row panel_padding">
+      <div class="col-sm-offset-4 col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-heading text-center"><h2><b>Hello, {{user.username}}!</b></h2>
+          </div>
+          <div class="panel-body">
+            <div class="container">
+              <h2>Your Profile</h2>
+              <p>Email: {{user.email}}</p>
+              <p>Your spaces: 
+                {%for space in spaces%}
+                <li>{{space.address}}</li> 
+                {%endfor%}
+              </p>
+
+              <h6> Add a space </h6> 
+
+            <form method="post" action="/post_space">
+              <font color="black">Address:</font> <input type="text" name="address"/>
+              <input type="submit" value="Add"/><br/>
+            </form>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<!--     <div class="container" align="center">
+      <h5>Your Profile</h5>
+      <p>Email: {{user.email}}</p>
+      <p>Your spaces: 
+        {%for space in spaces%}
+        <li>{{space.address}}</li> 
+        {%endfor%}
+      </p> 
+      <h6> Add a space </h6>  -->
+
+
+
+    </div>
+  </body>
+</html> 

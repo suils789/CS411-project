@@ -1,0 +1,36 @@
+body {
+   background-image: url("../images/city.jpg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: 50% 50%;
+   background-color: black;
+   background-attachment: fixed;
+}
+
+
+.panel_padding {
+  margin-top: 170px;
+}
+
+h5 {
+  color: white;
+  font-size: 150%;
+}
+/*p {
+	color: white;
+}
+
+li {
+	color: white;
+}
+
+h2 {
+  color: white;
+  font-size: 100%;
+}
+
+
+h6 {
+  color: white;
+  font-size: 130%;
+}*/
